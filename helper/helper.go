@@ -1,6 +1,6 @@
 package helper
 
-import "github.com/go-playground/validator"
+import "github.com/go-playground/validator/v10"
 
 type Response struct {
 	Meta Meta        `json:"meta"`
@@ -9,7 +9,7 @@ type Response struct {
 
 type Meta struct {
 	Message string `json:"message"`
-	Code    int    `json"code"`
+	Code    int    `json:"code"`
 	Status  string `json:"status"`
 }
 
